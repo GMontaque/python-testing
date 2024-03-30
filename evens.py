@@ -15,5 +15,11 @@ def even_number_of_evens(numbers):
         raise TypeError("A list was not passed into the function")
     return None
 
-if __name__ == "__main__":
-    print(even_number_of_evens([2, 1, 4]))
+def table_num():
+    return "yes"
+
+def table_add():
+    return 2
+
+# if __name__ == "__main__":
+#     print(even_number_of_evens([2, 1, 4]))

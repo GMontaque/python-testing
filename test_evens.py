@@ -1,5 +1,7 @@
 import unittest
 from evens import even_number_of_evens
+from evens import table_num
+from evens import table_add
 
 
 class TestEvens(unittest.TestCase):
@@ -11,6 +13,12 @@ class TestEvens(unittest.TestCase):
         self.assertEqual(even_number_of_evens([2, 4]), True)
         self.assertEqual(even_number_of_evens([2]), False)
         self.assertEqual(even_number_of_evens([1, 3, 5]), False)
+
+    def test_times_table(self):
+        self.assertEqual(table_num(), "yes")
+
+    def test_adding(self):
+        self.assertEqual(table_add(), 2)
 
 
 if __name__ == "__main__":
